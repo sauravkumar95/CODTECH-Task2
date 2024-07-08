@@ -1,0 +1,31 @@
+/Develop a Python program to track and manage student grades. The program should allow the user to input grades for different subjects or assignments, calculate the average grado, and display the overall grade along with any additional information (such as latter grade or GPA).**/
+#STUDENT GRADE TRACKER
+
+
+MATHS_MARKS=int(input("Enter the marks of maths: "))
+ENGLISH_MARKS=int(input("Enter the marks of english: "))
+HINDI_MARKS=int(input("Enter the marks of hindi: "))
+PHYSICS_MARKS=int(input("Enter the marks of physics: "))
+BIOLOGY_MARKS=int(input("Enter the marks of biology: "))
+
+print("Your total marks is:",MATHS_MARKS+ENGLISH_MARKS+HINDI_MARKS+PHYSICS_MARKS+BIOLOGY_MARKS,"/500")
+
+AVG_MARKS=(MATHS_MARKS+ENGLISH_MARKS+HINDI_MARKS+PHYSICS_MARKS+BIOLOGY_MARKS)/5
+
+if AVG_MARKS>=97:
+    print("YOUR Grade is: A+")
+
+elif 97>AVG_MARKS>=90:
+  print("Your Grade is: A")
+  
+elif 90>AVG_MARKS>=80:
+  print("Your Grade is: B")
+
+elif 80>AVG_MARKS>=65:
+  print("Your Grade is: C")
+
+elif 65>AVG_MARKS>=35:
+  print("Your Grade is: D")
+    
+else:
+  print("STUDENT FAILED!")
